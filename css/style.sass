@@ -1,0 +1,641 @@
+*, *::before, *::after, *:focus
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    outline: none
+    user-select: none
+
+:root
+    --first-font: "Heebo"    
+    --second-font: "PT Serif"
+
+body
+    font-size: 16px
+
+.main-container, .container
+    width: 100%
+    margin: 0 auto
+
+.main-container
+    max-width: 1366pxx
+
+.container
+    max-width: 1024px
+    
+.header
+    background: url(../img/background.jpg) no-repeat fixed
+    height: 760px
+    margin-bottom: 150px
+
+.header-p
+    position: relative
+
+.header-part-one
+    background: #fff
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    top: 38px
+    margin-bottom: 266px
+    height: 80px
+    padding: 0 25px
+
+.nav-bar
+    display: flex
+    align-items: center
+    position: relative
+    nav 
+        margin-right: 20px
+        ul
+            display: flex
+            list-style: none
+            li
+                margin-left: 20px
+                a
+                    text-decoration: none
+                    color: black
+                    text-transform: uppercase
+                    font-size: .9em
+                    font-family: var(--first-font)
+                .active-menu-header
+                    color: #ED093E
+    .talk
+        width: 80px
+        height: 80px
+        background: #ed093e
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        top: 15px
+        .talk-to-us
+            font-family: var(--first-font)
+            font-size: 1.250em
+            color: white
+            text-align: center
+
+.enjoy, .title, .rest
+    font-family: var(--first-font)
+    color: white
+    text-align: center
+
+.enjoy
+    font-size: 1.500em
+    font-weight: 200
+    margin-bottom: -26px
+.title
+    font-size: 6.250em
+    font-weight: 100
+    margin-bottom: -23px
+.rest
+    font-size: 1.500em
+    font-weight: 200
+.main
+    margin-bottom: 100px
+.main-grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+.more-than-title
+    font-family: var(--first-font)
+    font-weight: 100
+    font-size: 3.5em
+    line-height: 66px
+    color: #000
+.more-than-text-unknown
+    font-family: var(--second-font)
+    font-style: italic
+    font-size: 1.2em
+    line-height: 32px
+    color: #727272
+    margin-left: 70px
+    &::after
+        content: ""
+        display: block
+        border-bottom: 2px solid red
+        width: 100px
+        margin-bottom: 20px
+        margin-top: 23px
+.more-than-text-lorem
+    width: 380px
+    font-family: var(--first-font)
+    font-size: 1em
+    color: #000
+    margin-left: 96px
+.main-part-two
+    position: relative
+    .container-img
+        width: 458px
+        height: 380px
+        background: #fff
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16)
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        &:last-child
+            top: -92px
+            left: 97px
+.news-letter
+    background: #EE2655
+    height: 249px
+    margin-bottom: 80px
+.flex-news
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 249px
+.news-letter-title
+    font-family: var(--second-font)
+    font-style: italic
+    font-size: 1.375em
+    line-height: 32px
+    color: #fff
+form
+    input[type=text]
+        width: 460px
+        height: 60px
+        background: #f85b80
+        border: 0
+        font-family: var(--first-font)
+        font-size: 1em
+        line-height: 26px
+        color: #fff
+        padding: 0 16px
+    input[type=submit]
+        width: 266px
+        height: 60px
+        background: transparent
+        border: 1px solid white
+        font-family: var(--first-font)
+        font-size: 1em
+        letter-spacing: 0.1em
+        line-height: 26px
+        text-align: center
+        color: #fff
+        cursor: pointer
+.our-package-title
+    font-family: var(--first-font)
+    font-size: 4.313em
+    line-height: 79px
+    color: #000
+    text-align: center
+    margin-bottom: 33px
+    &::before
+        content: ""
+        display: block
+        border-top: 2px solid red
+        width: 50px
+        margin: 0 auto 52px
+.our-package-subtitle
+    font-family: var(--second-font)
+    font-style: italic
+    font-size: 1.313em
+    line-height: 31 px
+    text-align: center
+    color: #727272
+    margin-bottom: 71px
+
+.our-package-grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    margin-bottom: 128px
+    .our-package-grid-items
+        h3
+            font-family: var(--first-font)
+            font-weight: 300
+            font-size: 2.000em 
+            line-height: 42px
+            color: #000
+            &::after
+               content: ""
+               display: block
+               border-bottom: 2px solid red
+               width: 50px
+               margin-top: 33px
+               margin-bottom: 23px
+        p
+            width: 260px
+            font-family: var(--first-font)
+            font-size: 1em
+            color: #000
+            margin-left: 18px
+.featured-trip
+    margin-bottom: 103px
+.featured-trip-titles
+    background: url(../img/Background.svg) center
+    height: 322px
+    display: flex
+    align-items: center
+    justify-content: center
+    .featured-trip-title
+        font-family: var(--first-font)
+        font-weight: 100
+        font-size: 4.375em
+        line-height: 80px
+        text-align: center
+        color: #000
+        margin-bottom: 30px
+        &::before
+            content: ""
+            display: block
+            border-top: 2px solid red
+            width: 50px
+            margin: 0 auto 50px
+    .featured-trip-subtitle
+        font-family: var(--second-font)
+        font-style: italic
+        font-size: 1.375em
+        line-height: 32px
+        text-align: center
+        color: #727272
+        padding-bottom: 84px
+.featured-trip-hover-content
+    width: 100%
+    height: 450px
+    background: #fff
+    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.16))
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    overflow: hidden
+    margin-bottom: 28px
+    &:hover .img-data
+        left: 455px
+    img
+        object-fit: cover
+        width: 994px
+        height: 420px
+    .img-data
+        width: 554px
+        height: 420px
+        background: #fff
+        filter: opacity(0.84)
+        position: absolute
+        left: 1009px
+        transition: left .5s linear
+        .img-title
+            font-family: var(--first-font)
+            font-weight: 100
+            font-size: 4.375em
+            line-height: 80px
+            text-align: center
+            color: #000
+            margin-top: 52px 
+
+        .img-days
+            font-family: var(--second-font)
+            font-style: italic
+            font-size: 1.375em
+            line-height: 32px
+            text-align: center
+            color: #727272
+            &::after
+                content: ""
+                display: block
+                border-bottom: 2px solid red
+                width: 50px
+                margin: 27px auto 38px
+        .img-lorem
+            width: 443px
+            font-family: var(--first-font)
+            font-size: 1em
+            text-align: center
+            margin: 0 auto 34px
+        a
+            display: block
+            color: red
+            font-family: var(--first-font)
+            font-size: 1em
+            text-align: center
+            text-decoration: none
+.featured-trip-grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 12px
+    width: 100%
+    margin-bottom: 100px
+    .imagen-featured-container
+        width: 500px
+        height: 320px
+        background: #fff
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16)
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        overflow: hidden
+        margin-bottom: 28px
+        &:hover .figure-a
+            bottom: 12px
+        img
+            object-fit: cover
+            width: 475px
+            height: 295px
+        .figure-a
+            width: 314.68px
+            height: 78.69px
+            background: #ed093e
+            filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.16)) opacity(0.84)
+            position: absolute
+            bottom: -79px
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: bottom .5s linear
+            a
+                color: white
+                font-family: var(--second-font)
+                text-decoration: none
+                font-size: 1em
+.data-title
+    font-family: var(--first-font)
+    font-weight: 100
+    font-size: 2.875em
+    line-height: 56px
+    text-align: center
+    color: #000
+.data-day
+    font-family: var(--second-font)
+    font-style: italic
+    font-size: 1.375em
+    line-height: 32px
+    text-align: center
+    color: #727272
+    &::after
+        content: ""
+        display: block
+        border-bottom: 2px solid red
+        width: 50px
+        margin: 18px auto 35px
+.data-lorem
+    width: 90%
+    height: 108.24px
+    font-family: var(--first-font)
+    font-size: 1em
+    text-align: center
+    color: #000
+    margin: 0 auto
+.button-des
+    text-align: center
+.destination
+    width: 305px
+    height: 60px
+    border-radius: 2px
+    background: transparent
+    border: 2px solid #ee2655
+    font-family: var(--first-font)
+    font-size: 1em
+    letter-spacing: 0.1em
+    line-height: 26px
+    text-align: center
+    color: #ee2655
+    cursor: pointer
+.testimoni
+    background: url(../img/testimoni.jpg)
+    height: 570px
+    margin-bottom: 70px
+.testimoni-title
+    font-family: var(--first-font)
+    font-weight: 100
+    font-size: 4.375em
+    line-height: 80px
+    text-align: center
+    color: #fff
+    margin-bottom: 33px
+    &::before
+        content: ""
+        display: block
+        border-top: 2px solid white
+        width: 50px
+        margin: 68px auto 51px
+        position: relative
+        top: 68px
+        padding-bottom: 44px
+.testimoni-subtitle
+    font-family: var(--second-font)
+    font-style: italic
+    font-size: 1.375em
+    line-height: 32px
+    text-align: center
+    color: #fff
+    margin-bottom: 82px
+.second-testimoni-head-3
+    font-family: var(--second-font)
+    font-style: italic
+    font-size: 2.875em
+    line-height: 56px
+    text-align: center
+    color: #ffe200
+    quotes: "“" "”"
+    margin-bottom: 20px
+    &::before
+        content: open-quote
+    &::after
+        content: close-quote
+
+.second-testimoni-p
+    width: 714.73px
+    height: 59px
+    margin: 0 auto
+    font-family: var(--first-font)
+    font-size: 1em
+    text-align: center
+    color: #fff
+    margin-bottom: 33px
+
+.second-testimoni-p:last-child
+    font-family: var(--second-font)
+.blog
+    margin-bottom: 100px
+    .button 
+        width: 100%
+        display: flex
+        justify-content: center
+        button
+            width: 240px
+            cursor: pointer
+            height: 60px
+            border-radius: 2px
+            background: transparent
+            border: 2px solid #ee2655
+            font-family: var(--first-font)
+            font-size: 1em
+            letter-spacing: 0.1em
+            line-height: 26px
+            text-align: center
+            color: #ee2655
+
+.blog-title
+    font-family: var(--first-font)
+    font-size: 4.375em
+    font-weight: 100
+    line-height: 80px
+    text-align: center
+    color: #000
+    margin-bottom: 30px
+    &::before
+        content: ""
+        display: block
+        width: 50px
+        border-top: 2px solid red
+        margin: 0 auto 55px
+.blog-subbtitle
+    font-family: var(--second-font)
+    font-style: italic
+    font-size: 1.375em
+    line-height: 32px
+    text-align: center
+    color: #727272
+    margin-bottom: 90px
+.blog-grid
+    display: grid
+    grid-gap: 10px
+    grid-template-columns: repeat(3, 1fr)
+    margin-bottom: 67px
+    h3
+        width: 356px
+        height: 75px
+        font-family: var(--first-font)
+        font-weight: 300
+        font-size: 1.750em
+        line-height: 38px
+        color: #000
+        &::after
+            content: ""
+            display: block
+            width: 50px
+            margin: 18px 0 0
+            border-bottom: 2px solid red
+    p
+        width: 315px
+        height: 106px
+        font-family: var(--first-font)
+        font-size: 1em
+        color: #000
+        margin: 40px 0 0 22px
+    .more
+        width: 90%
+        display: flex
+        justify-content: flex-end
+        a
+            font-family: var(--first-font)
+            font-weight: normal
+            font-size: 1em
+            text-align: right
+            color: #ed093e
+            text-decoration: none
+
+.imag-blog
+    width: 331px
+    height: 280px
+    background: #fff
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16)
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 20px
+    img
+        object-fit: cover
+        width: 300px
+        height: 250px
+.post-footer
+    background: #EE2655
+    .post-footer-grid
+        display: grid
+        grid-template-columns: 1fr 1fr
+        .post-footer-grid-item:first-child
+            margin-top: 110px
+            h2
+                font-family: var(--first-font)
+                font-size: 4.375em
+                line-height: 80px
+                text-align: left
+                color: #fff 
+                &::after
+                    content: ""
+                    display: block
+                    width: 50px
+                    border-bottom: 2px solid white
+                    margin: 44px 0 38px
+            p
+                font-family: var(--first-font)
+                font-style: italic
+                font-size: 1.375em
+                line-height: 32px
+                color: #fff
+                margin-bottom: 70px
+            a
+                display: inline-flex
+                width: 266px
+                height: 60px
+                border-radius: 2px
+                background: #fff
+                font-family: var(--first-font)
+                font-size: 1em
+                letter-spacing: 0.1em
+                line-height: 26px
+                justify-content: center
+                align-items: center
+                color: #ee2655
+                text-decoration: none
+                margin-bottom: 100px
+        .post-footer-grid-item:last-child
+            .social-media
+                margin-top: 210px
+                display: flex
+                justify-content: space-between
+                margin-bottom: 53px    
+                a
+                    text-decoration: none
+                    font-size: 4em
+            .address
+                h4
+                    font-family: var(--first-font)
+                    font-weight: 300
+                    font-size: 32px
+                    line-height: 42px
+                    color: #fff
+                    &::after
+                        content: ""
+                        display: block
+                        width: 50px
+                        border-bottom: 2px solid white
+                        margin: 27px 0 27px 0
+                p
+                    font-family: var(--first-font)
+                    font-size: 1em
+                    color: #fff
+                    line-height: 26px
+footer
+    background: #D51945
+    height: 95px
+    .flex-footer
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .footer-logo
+            display: flex
+            justify-content: space-between
+            align-items: center
+            img
+                margin-right: 16px
+            p
+                font-family: var(--first-font)
+                font-size: 0.813em
+                line-height: 23px
+                color: #fff
+        .nav-footer
+            ul
+                display: flex
+                li
+                    list-style: none
+                    a
+                        font-family: var(--first-font)
+                        font-size: 1em
+                        line-height: 26px
+                        color: #fff
+                        text-decoration: none
+                        margin-left: 40px

@@ -1,0 +1,195 @@
+@media(max-width: 1160px)
+    .main-grid
+        grid-template-columns: 1fr
+        .more-than-title
+            width: 100%
+            text-align: center
+        .more-than-text-unknown
+            text-align: center
+            &::after
+                margin-left: auto
+                margin-right: auto
+        .more-than-text-lorem
+            text-align: center
+            width: 90%
+            margin: 0 auto 50px
+        .main-part-two
+            display: flex
+            justify-content: space-around
+            position: static
+            .container-img
+                position: static
+    .blog-grid
+        grid-template-columns: 1fr 1fr
+        .blog-grid-items
+            width: 90%
+            margin: 0 auto 20px
+            .imag-blog
+                width: 100%
+                img
+                    width: 95%
+
+            h3, p
+                text-align: center
+                width: 100%
+                &::after
+                    margin-left: auto
+                    margin-right: auto
+            p
+                margin-left: auto
+                margin-right: auto
+            .more
+                width: 100%
+                a
+                    margin: 0 auto
+            &:last-child
+                grid-column: 1 / -1
+    .post-footer
+        .post-footer-grid
+            grid-template-columns: 1fr
+            width: 90%
+            margin: 0 auto
+            .post-footer-grid-item:first-child
+                h2
+                    text-align: center
+                    width: 100%
+                    &::after
+                        margin-left: auto
+                        margin-right: auto
+                p
+                    text-align: center
+                a
+                    display: flex
+                    margin: 0 auto
+            .post-footer-grid-item:last-child
+                margin-bottom: 20px
+                .address
+                    width: 90%
+                    margin: 0 auto
+                    h4, p
+                        text-align: center
+                        width: 100%
+                    h4
+                        &::after
+                            margin-left: auto
+                            margin-right: auto
+    .flex-footer
+        padding: 0 20px
+
+@media(max-width: 1024px)
+    .header-part-one
+        width: 80%
+        margin-left: auto
+        margin-right: auto
+    .main-grid
+        .main-part-one
+            .more-than-title, .more-than-text-unknown, .more-than-text-lorem
+                width: 80%
+                word-break: break-word
+                text-align: center
+                margin: 0 auto
+            .more-than-text-lorem
+                margin-bottom: 30px
+        .main-part-two
+            flex-wrap: wrap
+            .container-img
+                margin-bottom: 40px
+                img
+                    width: calc( 100% -  10%)
+    .news
+        flex-wrap: wrap
+        text-align: center  
+        p
+            margin-bottom: 20px
+        form
+            input
+                margin-bottom: 20px
+            input[type=text]
+                text-align: center
+    .our-package
+        .our-package-grid
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            .our-package-grid-items
+                margin-bottom: 40px
+                h3
+                    text-align: center
+                    width: 100%
+                    &::after
+                        margin-left: auto
+                        margin-right: auto
+                p
+                    text-align: center
+    .featured-trip
+        padding: 0 20px
+        .featured-trip-hover-content
+            height: 470px
+            img
+                width: 95%
+            &:hover .img-data
+                left: 405px
+        .featured-trip-grid
+            grid-template-columns: 1fr
+            .imagen-featured-container
+                width: 100%
+                img
+                    width: 98%
+
+    .second-testimoni-p
+        width: 90%
+        margin-bottom: 20px
+
+@media(max-width: 880px)
+    body
+        font-size: 15px
+    .header
+        background: url(../img/background.jpg) no-repeat center
+        .header-part-one
+            height: auto
+            padding: 20px 0
+            flex-direction: column
+            .logo
+                margin-bottom: 10px
+            .nav-bar
+                .talk
+                    display: none   
+    .our-package
+        .our-package-grid
+            grid-template-columns: 1fr 1fr
+    .blog
+        .blog-grid
+            grid-template-columns: 1fr
+
+@media(max-width: 585px)
+    body
+        font-size: 12px
+    .header 
+        .header-part-one
+            .nav-bar
+                display: none
+            .logo
+                margin-bottom: 0
+    
+    .news-letter
+        .flex-news
+            width: 90%
+            margin: 0 auto
+            .news
+                form
+                    input[type=text]
+                        width: 100%
+@media(max-width: 500px)
+    .main
+        .main-grid
+            grid-template-columns: 100%
+    .button-des
+        button
+            width: 100%  
+    footer
+        .flex-footer
+            .footer-logo
+                justify-content: center
+                width: 100%
+    .nav-footer
+        display: none
